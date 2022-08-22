@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: red
+  m_Name: deadMaterial
   m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
   m_ValidKeywords:
   - _CELPRIMARYMODE_SINGLE
   - _TEXTUREBLENDINGMODE_MULTIPLY
-  m_InvalidKeywords:
-  - _UNITYSHADOWMODE_NONE
+  - _UNITYSHADOWMODE_MULTIPLY
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -104,9 +104,9 @@ Material:
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _RimEnabled: 0
-    - _SelfShadingSize: 0.5
+    - _SelfShadingSize: 0.82
     - _SelfShadingSizeExtra: 0.6
-    - _ShadowEdgeSize: 0.05
+    - _ShadowEdgeSize: 0.354
     - _ShadowEdgeSizeExtra: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularEnabled: 0
@@ -116,14 +116,14 @@ Material:
     - _TextureBlendingMode: 0
     - _TextureImpact: 1
     - _UVSec: 0
-    - _UnityShadowMode: 0
-    - _UnityShadowPower: 0.2
-    - _UnityShadowSharpness: 1
+    - _UnityShadowMode: 1
+    - _UnityShadowPower: 0.37
+    - _UnityShadowSharpness: 4.3
     - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.7137255, g: 0.2, b: 0.23137255, a: 1}
-    - _ColorDim: {r: 0.7137255, g: 0.2, b: 0.23137255, a: 1}
+    - _Color: {r: 0.5372549, g: 0.5686275, b: 0.80392164, a: 1}
+    - _ColorDim: {r: 0.6039216, g: 0.64705884, b: 0.8431373, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimExtra: {r: 0.7137255, g: 0.2, b: 0.23137255, a: 1}
     - _ColorDimSteps: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}

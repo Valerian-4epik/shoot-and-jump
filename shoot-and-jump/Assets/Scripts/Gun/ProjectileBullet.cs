@@ -11,13 +11,11 @@ public class ProjectileBullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Vector3 position = collision.contacts[0].point;
-        Quaternion rotation = Quaternion.LookRotation(collision.contacts[0].normal);
-        Instantiate(_impactEffect, position, rotation);
-
         if (collision.gameObject.GetComponent<Ground>())
         {
-            Debug.Log(collision.gameObject.name);
+            Vector3 position = collision.contacts[0].point;
+            Quaternion rotation = Quaternion.LookRotation(collision.contacts[0].normal);
+            Instantiate(_impactEffect, position, rotation);
             Destroy(gameObject);         
         }
     }

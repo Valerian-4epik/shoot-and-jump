@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9125685388507252194}
   - component: {fileID: 1667163004306959952}
   - component: {fileID: 507349833767075690}
+  - component: {fileID: 4335673116467290428}
   m_Layer: 0
   m_Name: calf_r
   m_TagString: Untagged
@@ -63,7 +64,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &507349833767075690
 CharacterJoint:
@@ -111,6 +112,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &4335673116467290428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934787
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +137,7 @@ GameObject:
   - component: {fileID: 7891054080435381793}
   - component: {fileID: 830925001454160016}
   - component: {fileID: 1364467001937718672}
+  - component: {fileID: 3609479891109681482}
   m_Layer: 0
   m_Name: calf_l
   m_TagString: Untagged
@@ -174,7 +189,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &1364467001937718672
 CharacterJoint:
@@ -222,6 +237,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &3609479891109681482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934789
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +421,7 @@ GameObject:
   - component: {fileID: 2409307775967086448}
   - component: {fileID: 1918865147184776481}
   - component: {fileID: 1172223328078722776}
+  - component: {fileID: 4797030463163359177}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -426,8 +455,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.14573169
-  m_Center: {x: 0, y: 0.14573169, z: 0}
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0.28, z: 0}
 --- !u!54 &1918865147184776481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -442,7 +471,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &1172223328078722776
 CharacterJoint:
@@ -490,6 +519,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &4797030463163359177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934803
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +672,7 @@ GameObject:
   - component: {fileID: 7531653767217221199}
   - component: {fileID: 5495329440631280432}
   - component: {fileID: 443719253295844275}
+  - component: {fileID: 620922593703701404}
   m_Layer: 0
   m_Name: lowerarm_l
   m_TagString: Untagged
@@ -644,9 +687,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8355375044726934813}
-  m_LocalRotation: {x: 0.08541885, y: 0.10010077, z: -0.23101704, w: 0.96400964}
-  m_LocalPosition: {x: -0.0000000037252903, y: 0.2638774, z: 0.00000015087426}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
+  m_LocalRotation: {x: 0.08541896, y: 0.100100785, z: -0.23101705, w: 0.96400964}
+  m_LocalPosition: {x: -0.00000008195639, y: 0.26387733, z: 0.000000059604645}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8355375044726837549}
@@ -681,7 +724,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &443719253295844275
 CharacterJoint:
@@ -729,6 +772,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &620922593703701404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934815
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +828,7 @@ GameObject:
   - component: {fileID: 1013009622116841280}
   - component: {fileID: 2160819716335134922}
   - component: {fileID: 2796845512563375617}
+  - component: {fileID: 8034793188414068726}
   m_Layer: 0
   m_Name: upperarm_r
   m_TagString: Untagged
@@ -823,7 +880,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &2796845512563375617
 CharacterJoint:
@@ -871,6 +928,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &8034793188414068726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934855
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +953,7 @@ GameObject:
   - component: {fileID: 2101407454545793594}
   - component: {fileID: 4221361430315440157}
   - component: {fileID: 4220463851110306408}
+  - component: {fileID: 2687953612784588031}
   m_Layer: 0
   m_Name: upperarm_l
   m_TagString: Untagged
@@ -934,7 +1005,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &4220463851110306408
 CharacterJoint:
@@ -982,6 +1053,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &2687953612784588031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1110,7 @@ GameObject:
   - component: {fileID: 1750633640200879486}
   - component: {fileID: 7300687212937438923}
   - component: {fileID: 2580731418666811076}
+  - component: {fileID: 5256470769696283417}
   m_Layer: 0
   m_Name: lowerarm_r
   m_TagString: Untagged
@@ -1077,7 +1162,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &2580731418666811076
 CharacterJoint:
@@ -1125,6 +1210,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5256470769696283417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1266,7 @@ GameObject:
   - component: {fileID: 8355375044726837511}
   - component: {fileID: 7165241870671424644}
   - component: {fileID: 7471442128014217777}
+  - component: {fileID: 1677022220093868542}
   m_Layer: 0
   m_Name: pelvis
   m_TagString: Untagged
@@ -1220,8 +1319,21 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1677022220093868542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8355375044726837515}
   - component: {fileID: 8355375044734336707}
+  - component: {fileID: 6460044824038434954}
   m_Layer: 0
   m_Name: PinkEnemy
   m_TagString: Untagged
@@ -1280,7 +1393,7 @@ Transform:
   m_GameObject: {fileID: 8355375044726934891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8355375044726837513}
@@ -1308,6 +1421,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6460044824038434954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455777ef46d9e674f9d4beb3217af431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ragdoll:
+  - {fileID: 7471442128014217777}
+  - {fileID: 7324878372868392973}
+  - {fileID: 4221361430315440157}
+  - {fileID: 5495329440631280432}
+  - {fileID: 2160819716335134922}
+  - {fileID: 7300687212937438923}
+  - {fileID: 1918865147184776481}
+  - {fileID: 945022096548395994}
+  - {fileID: 830925001454160016}
+  - {fileID: 6168884633907294509}
+  - {fileID: 1667163004306959952}
+  _skin: {fileID: 8355375044738433031}
+  _deadMaterial: {fileID: 2100000, guid: 7a5eabeb8138fd74e82ec957ea74fada, type: 2}
 --- !u!1 &8355375044726934893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1637,7 @@ GameObject:
   - component: {fileID: 6039949002931730287}
   - component: {fileID: 7324878372868392973}
   - component: {fileID: 9187251936376799098}
+  - component: {fileID: 4846359467159616917}
   m_Layer: 0
   m_Name: spine_03
   m_TagString: Untagged
@@ -1550,7 +1690,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &9187251936376799098
 CharacterJoint:
@@ -1598,6 +1738,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &4846359467159616917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1763,7 @@ GameObject:
   - component: {fileID: 374285492941835410}
   - component: {fileID: 6168884633907294509}
   - component: {fileID: 8684296152158312200}
+  - component: {fileID: 454944020886659610}
   m_Layer: 0
   m_Name: thigh_r
   m_TagString: Untagged
@@ -1661,7 +1815,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &8684296152158312200
 CharacterJoint:
@@ -1709,6 +1863,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &454944020886659610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,6 +1888,7 @@ GameObject:
   - component: {fileID: 7552941554981800677}
   - component: {fileID: 945022096548395994}
   - component: {fileID: 7068892559491027920}
+  - component: {fileID: 25183316916968278}
   m_Layer: 0
   m_Name: thigh_l
   m_TagString: Untagged
@@ -1772,7 +1940,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!144 &7068892559491027920
 CharacterJoint:
@@ -1820,6 +1988,19 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &25183316916968278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53af0bd7241544aa37822c862d7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 6460044824038434954}
 --- !u!1 &8355375044726934905
 GameObject:
   m_ObjectHideFlags: 0

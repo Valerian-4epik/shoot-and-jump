@@ -14,6 +14,6 @@ public class EnemyGenerator : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(_enemy, _spawnPoint.position, Quaternion.identity) ;
+        Instantiate(_enemy, _spawnPoint.position, Quaternion.Euler(0,180,0)) ;
     }
 }
