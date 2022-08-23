@@ -18,6 +18,8 @@ public class ProjectileBullet : MonoBehaviour
             Instantiate(_impactEffect, position, rotation);
             Destroy(gameObject);         
         }
+        if (collision.gameObject.GetComponent<EnemyParth>())
+            Destroy(gameObject);        
     }
 
     private void Start()

@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private List<Rigidbody> _ragdoll;
     [SerializeField] private SkinnedMeshRenderer _skin;
     [SerializeField] private Material _deadMaterial;
+
+    public UnityAction EnemyDiedEvent;
 
     private void Start()
     {
@@ -19,6 +22,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         _skin.material = _deadMaterial;
+        EnemyDiedEvent.Invoke();
 
         foreach(var rigidbody in _ragdoll)
         {

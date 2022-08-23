@@ -4,16 +4,10 @@ using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour
 {
-    [SerializeField] private Transform _spawnPoint;
-    [SerializeField] private GameObject _enemy;
+    [SerializeField] private Enemy _Enemy;
 
-    void Start()
+    private void Start()
     {
-        Spawn();
-    }
-
-    private void Spawn()
-    {
-        Instantiate(_enemy, _spawnPoint.position, Quaternion.Euler(0,180,0)) ;
+        _Enemy.gameObject.SetActive(true);
     }
 }
