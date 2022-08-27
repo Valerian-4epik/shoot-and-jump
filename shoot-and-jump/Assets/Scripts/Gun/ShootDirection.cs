@@ -22,7 +22,10 @@ public class ShootDirection : MonoBehaviour
         if(Physics.Raycast(ray, out hit, _range))
         {
             if (hit.collider.gameObject.GetComponent<EnemyParth>() || hit.collider.gameObject.GetComponent<TargetBox>())
-                _canBeSlowed = true;           
+            {
+
+            }
+                //_canBeSlowed = true;           
         }
     }
 }

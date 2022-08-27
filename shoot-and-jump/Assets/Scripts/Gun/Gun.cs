@@ -35,8 +35,8 @@ public class Gun : MonoBehaviour
 
     public void Shoot()
     {
-        if (_direction.CanBeSlowed)
-            Time.timeScale = 0.6f;
+        //if (_direction.CanBeSlowed)
+        //    Time.timeScale = 0.6f;
         PlayOnEffect(_effects);
         ProjectileBullet bullet = Instantiate(_bullet, _shootPoint.position, Quaternion.LookRotation(_direction.Direction));
         bullet.SetDirection(-_direction.Direction);

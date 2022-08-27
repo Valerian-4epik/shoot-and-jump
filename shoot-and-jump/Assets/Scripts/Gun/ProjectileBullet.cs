@@ -19,7 +19,6 @@ public class ProjectileBullet : MonoBehaviour
         }
 
         Destroy(gameObject);
-        Time.timeScale = 1f;
     }
 
     private void Start()
