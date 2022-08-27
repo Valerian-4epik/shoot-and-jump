@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6497b3f26a53a5c44b1bb8fe3bcb4145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 900
+  _speed: 1500
   _impactEffect: {fileID: 7741547366421309148, guid: 4004b5cf421836743b9a11fec5d75b26, type: 3}
 --- !u!4 &8000289472730409923 stripped
 Transform:

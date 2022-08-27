@@ -15,10 +15,11 @@ public class ProjectileBullet : MonoBehaviour
         {
             Vector3 position = collision.contacts[0].point;
             Quaternion rotation = Quaternion.LookRotation(collision.contacts[0].normal);
-            Instantiate(_impactEffect, position, rotation);    
+            Instantiate(_impactEffect, position, rotation);
         }
 
-        Destroy(gameObject);        
+        Destroy(gameObject);
+        Time.timeScale = 1f;
     }
 
     private void Start()

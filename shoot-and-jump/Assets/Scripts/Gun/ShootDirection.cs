@@ -9,22 +9,20 @@ public class ShootDirection : MonoBehaviour
     private bool _canBeSlowed;
 
     public Vector3 Direction => _direction;
+    public bool CanBeSlowed => _canBeSlowed;
 
     private void Update()
     {
         Ray ray = new Ray(transform.position, transform.forward);  
-        Debug.DrawRay(transform.position, -transform.forward * _range, Color.red);
+        Debug.DrawRay(transform.position, transform.forward * _range, Color.red);
         _direction = ray.direction;
 
         RaycastHit hit;
 
         if(Physics.Raycast(ray, out hit, _range))
-        {     
-            //if(hit.collider.gameObject.GetComponent<EnemyParth>() || hit.collider.gameObject.GetComponent<DartsBox>())
-            //{
-            //    _canBeSlowed = true;
-            //}
-
+        {
+            if (hit.collider.gameObject.GetComponent<EnemyParth>() || hit.collider.gameObject.GetComponent<TargetBox>())
+                _canBeSlowed = true;           
         }
     }
 }

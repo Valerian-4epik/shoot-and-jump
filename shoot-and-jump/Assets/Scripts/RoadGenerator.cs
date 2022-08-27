@@ -7,6 +7,7 @@ public class RoadGenerator : MonoBehaviour
     [SerializeField] private GameObject _roadPrefab;
     [SerializeField] private GameObject _finish;
     [SerializeField] private int _roadLength;
+    [SerializeField] private FinishPanel _finishPanel;
 
     private List<GameObject> _road = new List<GameObject>();
     private Vector3 _finishRotation = new Vector3(0,180,0);
@@ -31,5 +32,6 @@ public class RoadGenerator : MonoBehaviour
         }
 
         GameObject finish = Instantiate(_finish, position, Quaternion.Euler(_finishRotation));
+        finish.GetComponentInChildren<DartsManager>().Panel(_finishPanel);
     }
 }
