@@ -3,7 +3,7 @@
     Properties
     {
         [MainColor] _Color ("Color", Color) = (1,1,1,1)
-        
+
         [Space(10)]
         [KeywordEnum(None, Single, Steps, Curve)]_CelPrimaryMode("Cel Shading Mode", Float) = 1
         _ColorDim ("[_CELPRIMARYMODE_SINGLE]Color Shaded", Color) = (0.85023, 0.85034, 0.85045, 0.85056)
@@ -150,7 +150,13 @@
                 float2 offset = normalize(clipNormal.xy) / _ScreenParams.xy * outlineWidth * clipPosition.w * 2.0;
                 clipPosition.xy += offset;
                 half outlineDepthOffset = UNITY_ACCESS_INSTANCED_PROP(OutlineProps, _OutlineDepthOffset);
+
+                #if defined(UNITY_REVERSED_Z)
                 clipPosition.z -= outlineDepthOffset;
+                #else
+                clipPosition.z += outlineDepthOffset;
+                #endif
+
                 return clipPosition;
             }
 

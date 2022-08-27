@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _gun;
-    [SerializeField] private float _force;
+    [SerializeField] private GameObject _explosionPoint;
+    [SerializeField] private float _forceExplosion;
+    [SerializeField] private float _pushForce;
     [SerializeField] private float _radius;
+    [SerializeField] private float _upwardsModifier;
 
-    public void Explode()
+    private void Explode()
     {
-        _gun.AddExplosionForce(_force, transform.position, _radius);
+        gameObject.GetComponent<Rigidbody>().AddExplosionForce(_forceExplosion, _explosionPoint.transform.position, _radius, 
+            _upwardsModifier, ForceMode.Impulse);
+        gameObject.GetComponent<Rigidbody>().AddForce(Direction() * _pushForce, ForceMode.Impulse);
+    }
+
+    private Vector3 Direction()
+    {
+        Vector3 reverseDirection = _explosionPoint.transform.position - transform.position;
+        return reverseDirection;
     }
 }
