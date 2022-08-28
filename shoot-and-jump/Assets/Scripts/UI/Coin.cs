@@ -10,7 +10,6 @@ public class Coin : MonoBehaviour
     [SerializeField] private Transform _target;
 
     private Transform _player;
-    private float _duration = 3;
 
     private void Start()
     {
@@ -18,13 +17,12 @@ public class Coin : MonoBehaviour
         Rotation();
     }
 
-    IEnumerator MoveToPLayer(float duration)//rename
+    IEnumerator MoveToPLayer()//rename
     {
-        var delay = new WaitForSeconds(1f);
-        yield return new WaitForSeconds(duration);
-        transform.DOMove(_player.transform.position, 0.5f);
+        yield return new WaitForSeconds(2);
+        transform.DOMove(_player.transform.position, 0.1f);
 
-        yield return delay;
+        yield return new WaitForSeconds(0.4f);
         gameObject.SetActive(false);
     }
     private void Move()
@@ -32,7 +30,7 @@ public class Coin : MonoBehaviour
         Vector3 direction = _target.position - _coin.position;
         _coin.AddForce(Vector3.up * _force);
         _coin.AddForce(direction * _force);
-        StartCoroutine(MoveToPLayer(_duration));
+        StartCoroutine(MoveToPLayer());
     }
 
     private void Rotation()

@@ -23,7 +23,7 @@ public class CoinGenerator : MonoBehaviour
         
     private void Create()
     {
-        float stepAngle = 15;
+        float stepAngle = 20;
         float angleRotation = -50;
 
         for(int i = 0; i < _coinNumber; i++)

@@ -2,14 +2,20 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: IslandWithTrees-Cloud
   m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
-  m_ShaderKeywords: DR_SPECULAR_ON _CELPRIMARYMODE_SINGLE _TEXTUREBLENDINGMODE_MULTIPLY
+  m_ValidKeywords:
+  - DR_GRADIENT_ON
+  - DR_VERTEX_COLORS_ON
+  - _TEXTUREBLENDINGMODE_MULTIPLY
+  m_InvalidKeywords:
+  - _CELPRIMARYMODE_NONE
+  - _UNITYSHADOWMODE_NONE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -77,7 +83,7 @@ Material:
     - _CelExtraEnabled: 0
     - _CelNumSteps: 3
     - _CelPrimaryEnabled: 0
-    - _CelPrimaryMode: 1
+    - _CelPrimaryMode: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -91,20 +97,20 @@ Material:
     - _FlatSmoothness: 0.362
     - _FlatSpecularEdgeSmoothness: 0
     - _FlatSpecularEnabled: 1
-    - _FlatSpecularSize: 0.054
+    - _FlatSpecularSize: 0.33
     - _FlatSpecularSmoothness: 0.5
-    - _Flatness: 0.25
+    - _Flatness: 0.06
     - _FlatnessExtra: 0.143
     - _FlatnessSecondary: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _GradientAngle: 180
-    - _GradientCenterX: 0
-    - _GradientCenterY: 0
-    - _GradientEnabled: 0
+    - _GradientAngle: 246
+    - _GradientCenterX: 12.41
+    - _GradientCenterY: 3
+    - _GradientEnabled: 1
     - _GradientEnd: 0.55
-    - _GradientSize: 9.51
+    - _GradientSize: 1.81
     - _GradientStart: 1.17
     - _LightContribution: 0.5
     - _LightFalloffSize: 0.0001
@@ -125,14 +131,14 @@ Material:
     - _RimEnabled: 0
     - _SecondaryColor: 1
     - _SecondaryColorEnabled: 1
-    - _SelfShadingSize: 0.204
+    - _SelfShadingSize: 0.34
     - _SelfShadingSizeExtra: 0.083
     - _ShadowEdgeSize: 0.038
     - _ShadowEdgeSizeExtra: 0.05
     - _ShadowEdgeSmoothness: 0.071
     - _ShadowFalloff: 0.01
     - _SmoothnessTextureChannel: 0
-    - _SpecularEnabled: 1
+    - _SpecularEnabled: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
@@ -143,23 +149,23 @@ Material:
     - _UnityShadowOcclusion: 0
     - _UnityShadowPower: 0
     - _UnityShadowSharpness: 1
-    - _VertexColorsEnabled: 0
+    - _VertexColorsEnabled: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.55032927, g: 0.7830188, b: 0.7375251, a: 1}
-    - _Color: {r: 0.5503293, g: 0.7830189, b: 0.7375251, a: 1}
+    - _Color: {r: 0.5287825, g: 0.553326, b: 0.5754717, a: 0.3254902}
     - _ColorCelShadow: {r: 0.49056602, g: 0.34478462, b: 0.4476891, a: 1}
-    - _ColorDim: {r: 0.6886792, g: 0.49052152, b: 0.49052152, a: 1}
+    - _ColorDim: {r: 0.6886792, g: 0.49052152, b: 0.49052152, a: 0}
     - _ColorDimCurve: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
     - _ColorDimExtra: {r: 0.67058825, g: 0.09803922, b: 0.3672108, a: 0.85}
     - _ColorDimSteps: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
-    - _ColorGradient: {r: 0.20568848, g: 0.19090424, b: 0.6226415, a: 1}
+    - _ColorGradient: {r: 0.10238862, g: 0, b: 2.9971354, a: 0}
     - _ColorSecondary: {r: 1, g: 0.55879205, b: 0, a: 1}
     - _ColorShadow: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _ColorShadows: {r: 0.5471698, g: 0.37346402, b: 0.26584196, a: 1}
     - _EmissionColor: {r: 4.9245777, g: 0, b: 0, a: 1}
     - _FlatRimColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
-    - _FlatSpecularColor: {r: 0.5754717, g: 0.54176843, b: 0.40988785, a: 1}
+    - _FlatSpecularColor: {r: 0, g: 0.042280674, b: 1, a: 0.20392157}
     - _LightmapDirection: {r: 0, g: 1, b: 0, a: 0}
     - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnityShadowColor: {r: 0.65, g: 0.65, b: 0.65, a: 1}
