@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -23,6 +22,8 @@ public class Enemy : MonoBehaviour
     {
         _skin.material = _deadMaterial;
         EnemyDiedEvent.Invoke();
+
+        gameObject.GetComponent<Animator>().enabled = false;
 
         foreach(var rigidbody in _ragdoll)
         {

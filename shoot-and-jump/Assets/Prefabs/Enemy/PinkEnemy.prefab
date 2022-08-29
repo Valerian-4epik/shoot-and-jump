@@ -1377,6 +1377,7 @@ GameObject:
   - component: {fileID: 8355375044726837515}
   - component: {fileID: 8355375044734336707}
   - component: {fileID: 6460044824038434954}
+  - component: {fileID: -5309125727797399758}
   m_Layer: 0
   m_Name: PinkEnemy
   m_TagString: Untagged
@@ -1411,7 +1412,7 @@ Animator:
   m_GameObject: {fileID: 8355375044726934891}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30a4e5355f3241f4184942282a2e6234, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1447,6 +1448,20 @@ MonoBehaviour:
   - {fileID: 1667163004306959952}
   _skin: {fileID: 8355375044738433031}
   _deadMaterial: {fileID: 2100000, guid: 7a5eabeb8138fd74e82ec957ea74fada, type: 2}
+--- !u!114 &-5309125727797399758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355375044726934891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6bd7ac0857c1a4fa867ff8eff43b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 8355375044734336707}
+  _allRigidbody: []
 --- !u!1 &8355375044726934893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,7 +1578,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6fbc73089ab959c4aa1290d8535c0c55, type: 2}
+  - {fileID: 2100000, guid: 67e02736826e94ff1a0442df707a7a1c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

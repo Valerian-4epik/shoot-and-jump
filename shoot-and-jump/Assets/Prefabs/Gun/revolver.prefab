@@ -121,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715534004957850857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.016329646, y: 0.15394828, z: -0.22262499}
   m_LocalScale: {x: 10, y: 28, z: 28}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -226,8 +226,9 @@ MonoBehaviour:
   _explosionPoint: {fileID: 1949958339587646604}
   _forceExplosion: 8
   _pushForce: 15
-  _radius: 1
+  _radius: 0
   _upwardsModifier: 3
+  _stickmanBody: []
 --- !u!114 &404330266
 MonoBehaviour:
   m_ObjectHideFlags: 0
