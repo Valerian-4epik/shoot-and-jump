@@ -31,7 +31,7 @@ public class RoadGenerator : MonoBehaviour
             _road.Add(road);
         }
 
-        GameObject finish = Instantiate(_finish, position, Quaternion.Euler(_finishRotation));
+        GameObject finish = Instantiate(_finish, position, Quaternion.Euler(_finishRotation), transform);
         finish.GetComponentInChildren<DartsManager>().Panel(_finishPanel);
     }
 }

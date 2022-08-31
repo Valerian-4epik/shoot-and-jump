@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
     IEnumerator MoveToPLayer()//rename
     {
         yield return new WaitForSeconds(2);
-        transform.DOMove(_player.transform.position, 0.1f);
+        transform.DOMove(_player.transform.position, 0.2f);
 
         yield return new WaitForSeconds(0.4f);
         gameObject.SetActive(false);

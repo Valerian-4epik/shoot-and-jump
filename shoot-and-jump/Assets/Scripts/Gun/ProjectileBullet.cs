@@ -1,29 +1,36 @@
+using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 public class ProjectileBullet : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private GameObject _impactEffect;
 
-    private Rigidbody _rigidbody;
     private Vector3 _direction;
+    private Gun _gun;
+    private Vector3 _offset = new Vector3(0, 0.001f, 0);
+
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<Ground>())
         {
             Vector3 position = collision.contacts[0].point;
-            Quaternion rotation = Quaternion.LookRotation(collision.contacts[0].normal);
-            Instantiate(_impactEffect, position, rotation);
+            Quaternion rotation = Quaternion.Euler(90, 0, 0);
+            
+            Instantiate(_impactEffect, position + _offset, rotation);
         }
-
+        Time.timeScale = 1.0f;
         Destroy(gameObject);
     }
 
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        _rigidbody = GetComponent<Rigidbody>();
+        if (other.gameObject.GetComponent<TargetBox>())
+        {
+            _gun.LastBulletShoot?.Invoke();
+            _gun.ShootCinfitti();
+        }
     }
 
     private void Update()
@@ -31,18 +38,19 @@ public class ProjectileBullet : MonoBehaviour
         Fly(); 
     }
 
-    public void SetDirection(Vector3 direction)
+    public void Destroy()
     {
+        Destroy(gameObject, 2f);
+    }
+
+    public void Init(Gun gun, Vector3 direction)
+    {
+        _gun = gun;
         _direction = direction;
     }
 
     private void Fly()
     {
-       _rigidbody.velocity = -_direction * _speed * Time.deltaTime;
-    }
-
-    public void Destroy()
-    {
-        Destroy(gameObject, 3f);
+       gameObject.GetComponent<Rigidbody>().velocity = _direction * _speed * Time.deltaTime;
     }
 }

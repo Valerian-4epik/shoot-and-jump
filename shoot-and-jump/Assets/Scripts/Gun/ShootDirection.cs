@@ -23,9 +23,11 @@ public class ShootDirection : MonoBehaviour
         {
             if (hit.collider.gameObject.GetComponent<EnemyParth>() || hit.collider.gameObject.GetComponent<TargetBox>())
             {
-
+                _canBeSlowed = true;
             }
-                //_canBeSlowed = true;           
+            else
+                _canBeSlowed = false;
         }
+        Debug.Log(_canBeSlowed);
     }
 }

@@ -4886,6 +4886,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3770837226812421750}
     m_Modifications:
+    - target: {fileID: 3472283302907660190, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5149708055738083453, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.0241
@@ -4937,6 +4941,10 @@ PrefabInstance:
     - target: {fileID: 6732675430009955548, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
       propertyPath: m_Name
       value: Coin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732675430009955548, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8370613095479200702, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
