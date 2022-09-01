@@ -45,17 +45,17 @@ public class Gun : MonoBehaviour
         _confitti.Play();
     }
 
-    private IEnumerator PlayTrail(float time)
+    private IEnumerator PlayTrail()
     {
         _trail.enabled = true;
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(0.5f);
         _trail.enabled = false;
     }
 
     public void Shoot()
     {
         if (_direction.CanBeSlowed)
-            Time.timeScale = 0.5f;
+            Time.timeScale = 0.4f;
 
         PlayOnEffects(_effects);
         ProjectileBullet bullet = Instantiate(_bullet, _shootPoint.position, Quaternion.LookRotation(_direction.Direction));
@@ -65,11 +65,11 @@ public class Gun : MonoBehaviour
 
         if (_trail.enabled)
         {
-            StopCoroutine(PlayTrail(_trail.time));
-            StartCoroutine(PlayTrail(_trail.time));
+            StopCoroutine(PlayTrail());
+            StartCoroutine(PlayTrail());
         }
         else
-            StartCoroutine(PlayTrail(_trail.time));
+            StartCoroutine(PlayTrail());
     }
 
     public void ShootCinfitti()

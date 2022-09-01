@@ -689,7 +689,7 @@ Transform:
   m_GameObject: {fileID: 8355375044726934813}
   m_LocalRotation: {x: 0.08541896, y: 0.100100785, z: -0.23101705, w: 0.96400964}
   m_LocalPosition: {x: -0.00000008195639, y: 0.26387733, z: 0.000000059604645}
-  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_LocalScale: {x: 1.43, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8355375044726837549}
@@ -845,7 +845,7 @@ Transform:
   m_GameObject: {fileID: 8355375044726934853}
   m_LocalRotation: {x: 0.2138062, y: 0.059386298, z: 0.16481291, w: 0.9610395}
   m_LocalPosition: {x: 0.0000000055879354, y: 0.13966921, z: 0.0000000060535967}
-  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
+  m_LocalScale: {x: 1.43, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8355375044726837507}
@@ -968,15 +968,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8355375044726934855}
-  m_LocalRotation: {x: 0.2138062, y: -0.059386343, z: -0.16481291, w: 0.9610395}
+  m_LocalRotation: {x: 0.4292795, y: -0.09572862, z: -0.14671764, w: 0.8860187}
   m_LocalPosition: {x: -0.0000000027939677, y: 0.13966924, z: -0.000000006519258}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_LocalScale: {x: 1.43, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8355375044726837565}
   m_Father: {fileID: 8355375044726837543}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 47.106, y: -25.74, z: -30.18}
 --- !u!136 &2101407454545793594
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1127,7 +1127,7 @@ Transform:
   m_GameObject: {fileID: 8355375044726934883}
   m_LocalRotation: {x: 0.08541835, y: -0.10010086, z: 0.23101637, w: 0.9640099}
   m_LocalPosition: {x: 0.0000000018626451, y: 0.26387748, z: -0.0000000011641532}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_LocalScale: {x: 1.43, y: 0.99999994, z: 0.99999994}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8355375044726837555}
@@ -1447,7 +1447,7 @@ MonoBehaviour:
   - {fileID: 6168884633907294509}
   - {fileID: 1667163004306959952}
   _skin: {fileID: 8355375044738433031}
-  _deadMaterial: {fileID: 2100000, guid: 7a5eabeb8138fd74e82ec957ea74fada, type: 2}
+  _deadMaterial: {fileID: 2100000, guid: 52f86d32d9b2d4063bb9edb137b21165, type: 2}
 --- !u!114 &-5309125727797399758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1578,7 +1578,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 67e02736826e94ff1a0442df707a7a1c, type: 2}
+  - {fileID: 2100000, guid: dd9373dce9879486c834e9186bac8e10, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

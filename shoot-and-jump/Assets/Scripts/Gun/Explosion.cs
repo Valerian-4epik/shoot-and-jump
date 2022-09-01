@@ -13,7 +13,7 @@ public class Explosion : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.clear;
         Gizmos.DrawSphere(_explosionPoint.transform.position, _radius);
     }
 
@@ -31,8 +31,9 @@ public class Explosion : MonoBehaviour
 
         foreach(Rigidbody parthOfBody in _stickmanBody)
         {
-            parthOfBody.AddExplosionForce(_forceExplosion, _explosionPoint.transform.position, _radius);
+            parthOfBody.AddExplosionForce(-_forceExplosion * 80, _explosionPoint.transform.position, _radius);
         }
+      
     }
 
 }

@@ -40,7 +40,7 @@ public class ProjectileBullet : MonoBehaviour
 
     public void Destroy()
     {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 4f);
     }
 
     public void Init(Gun gun, Vector3 direction)

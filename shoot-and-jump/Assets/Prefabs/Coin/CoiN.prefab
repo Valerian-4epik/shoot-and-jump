@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199996751809970702}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.039, z: 0.006}
+  m_LocalPosition: {x: 0.019, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3933,7 +3933,7 @@ ParticleSystem:
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.05
+      scalar: 0.08
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4761,8 +4761,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c3f81ca1d300246269aa73091d2103f9, type: 2}
-  - {fileID: 2100000, guid: b82e1056173d24d179d23832acb54555, type: 2}
+  - {fileID: 2100000, guid: be8592524361449788c114916a0f884d, type: 2}
+  - {fileID: 2100000, guid: d307ada0096114322b70030904107641, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4839,8 +4839,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3770837226812421751}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.682}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.08, y: -2.3, z: 2.3}
+  m_LocalScale: {x: 1, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7093205111880487554}
@@ -4890,6 +4890,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5075478516465779977, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: be8592524361449788c114916a0f884d, type: 2}
     - target: {fileID: 5149708055738083453, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.0241
@@ -4904,7 +4908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207248972043402854, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.799
+      value: -0.71000004
       objectReference: {fileID: 0}
     - target: {fileID: 6207248972043402854, guid: 0e687d7f9bddd9541b5d1fd49dc4e50b, type: 3}
       propertyPath: m_LocalPosition.z
