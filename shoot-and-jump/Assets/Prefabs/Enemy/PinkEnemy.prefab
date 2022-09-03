@@ -1447,7 +1447,7 @@ MonoBehaviour:
   - {fileID: 6168884633907294509}
   - {fileID: 1667163004306959952}
   _skin: {fileID: 8355375044738433031}
-  _deadMaterial: {fileID: 2100000, guid: 52f86d32d9b2d4063bb9edb137b21165, type: 2}
+  _deadMaterial: {fileID: 2100000, guid: 7ad04dee015b5294dacc07594cb56518, type: 2}
 --- !u!114 &-5309125727797399758
 MonoBehaviour:
   m_ObjectHideFlags: 0
