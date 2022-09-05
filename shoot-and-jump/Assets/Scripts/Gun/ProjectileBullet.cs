@@ -5,6 +5,7 @@ public class ProjectileBullet : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private GameObject _impactEffect;
+    [SerializeField] private ParticleSystem _muzzleEffect;
 
     private Vector3 _direction;
     private Gun _gun;
@@ -31,6 +32,11 @@ public class ProjectileBullet : MonoBehaviour
             _gun.LastBulletShoot?.Invoke();
             _gun.ShootCinfitti();
         }
+    }
+
+    private void Start()
+    {
+        _muzzleEffect.Play();
     }
 
     private void Update()

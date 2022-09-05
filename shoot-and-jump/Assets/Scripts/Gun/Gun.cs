@@ -48,14 +48,14 @@ public class Gun : MonoBehaviour
     private IEnumerator PlayTrail()
     {
         _trail.enabled = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         _trail.enabled = false;
     }
 
     public void Shoot()
     {
         if (_direction.CanBeSlowed)
-            Time.timeScale = 0.4f;
+            Time.timeScale = 0.6f;
 
         PlayOnEffects(_effects);
         ProjectileBullet bullet = Instantiate(_bullet, _shootPoint.position, Quaternion.LookRotation(_direction.Direction));
@@ -63,13 +63,13 @@ public class Gun : MonoBehaviour
         _force.Explode();
         bullet.Destroy();
 
-        if (_trail.enabled)
-        {
-            StopCoroutine(PlayTrail());
-            StartCoroutine(PlayTrail());
-        }
-        else
-            StartCoroutine(PlayTrail());
+        //if (_trail.enabled)
+        //{
+        //    StopCoroutine(PlayTrail());
+        //    StartCoroutine(PlayTrail());
+        //}
+        //else
+        //    StartCoroutine(PlayTrail());
     }
 
     public void ShootCinfitti()
