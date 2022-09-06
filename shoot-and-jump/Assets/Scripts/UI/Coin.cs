@@ -17,14 +17,6 @@ public class Coin : MonoBehaviour
         Rotation();
     }
 
-    IEnumerator MoveToPLayer()//rename
-    {
-        yield return new WaitForSeconds(2);
-        transform.DOMove(_player.transform.position, 0.2f);
-
-        yield return new WaitForSeconds(0.4f);
-        gameObject.SetActive(false);
-    }
     private void Move()
     {
         Vector3 direction = _target.position - _coin.position;
@@ -35,7 +27,8 @@ public class Coin : MonoBehaviour
 
     private void Rotation()
     {
-        _coin.AddTorque(0, 0, 1000f);
+        float forceRotate = 1000f;
+        _coin.AddTorque(0, 0, forceRotate);
     }
 
     public void SetTarget(Transform target)
@@ -43,4 +36,13 @@ public class Coin : MonoBehaviour
         _player = target;
     }
 
+    IEnumerator MoveToPLayer()
+    {
+        float delay = 0.2f;
+        yield return new WaitForSeconds(2);
+        transform.DOMove(_player.transform.position, delay);
+
+        yield return new WaitForSeconds(0.4f);
+        gameObject.SetActive(false);
+    }
 }

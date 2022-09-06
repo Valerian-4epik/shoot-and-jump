@@ -805,7 +805,7 @@ MonoBehaviour:
   fadeType: 0
   range: 0.4
   deletion: 0
-  strength: 3
+  strength: 6
   variation: 50
   chaos: 30
   forceByMass: 1
@@ -77782,7 +77782,7 @@ MonoBehaviour:
   fadeType: 0
   range: 0.4
   deletion: 0
-  strength: 3
+  strength: 6
   variation: 50
   chaos: 30
   forceByMass: 1
@@ -77894,7 +77894,7 @@ MonoBehaviour:
   fadeType: 0
   range: 0.4
   deletion: 0
-  strength: 3
+  strength: 5
   variation: 50
   chaos: 30
   forceByMass: 1
@@ -97173,7 +97173,7 @@ MonoBehaviour:
   fadeType: 0
   range: 0.4
   deletion: 0
-  strength: 3
+  strength: 6
   variation: 50
   chaos: 30
   forceByMass: 1
@@ -97285,7 +97285,7 @@ MonoBehaviour:
   fadeType: 0
   range: 0.4
   deletion: 0
-  strength: 3
+  strength: 6
   variation: 50
   chaos: 30
   forceByMass: 1
@@ -97617,7 +97617,7 @@ MonoBehaviour:
   fadeType: 0
   range: 0.4
   deletion: 0
-  strength: 3
+  strength: 6
   variation: 50
   chaos: 30
   forceByMass: 1
@@ -97727,9 +97727,9 @@ MonoBehaviour:
   showGizmo: 0
   rangeType: 0
   fadeType: 0
-  range: 0.4
+  range: 6
   deletion: 0
-  strength: 3
+  strength: 6
   variation: 50
   chaos: 30
   forceByMass: 1
@@ -98000,7 +98000,7 @@ MonoBehaviour:
   fadeType: 0
   range: 0.4
   deletion: 0
-  strength: 3
+  strength: 6
   variation: 50
   chaos: 30
   forceByMass: 1

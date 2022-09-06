@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class ProjectileBullet : MonoBehaviour
@@ -10,7 +9,7 @@ public class ProjectileBullet : MonoBehaviour
     private Vector3 _direction;
     private Gun _gun;
     private Vector3 _offset = new Vector3(0, 0.001f, 0);
-
+    private float _delayedDeath = 4f;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,6 +20,7 @@ public class ProjectileBullet : MonoBehaviour
             
             Instantiate(_impactEffect, position + _offset, rotation);
         }
+
         Time.timeScale = 1.0f;
         Destroy(gameObject);
     }
@@ -46,7 +46,7 @@ public class ProjectileBullet : MonoBehaviour
 
     public void Destroy()
     {
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, _delayedDeath);
     }
 
     public void Init(Gun gun, Vector3 direction)

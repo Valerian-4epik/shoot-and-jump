@@ -10,11 +10,10 @@ Material:
   m_Name: Cloud_cumulus
   m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
   m_ValidKeywords:
-  - DR_CEL_EXTRA_ON
   - DR_GRADIENT_ON
+  - _CELPRIMARYMODE_SINGLE
   - _TEXTUREBLENDINGMODE_MULTIPLY
   m_InvalidKeywords:
-  - _CELPRIMARYMODE_NONE
   - _EMISSION
   - _UNITYSHADOWMODE_NONE
   m_LightmapFlags: 1
@@ -75,9 +74,9 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
-    - _CelExtraEnabled: 1
+    - _CelExtraEnabled: 0
     - _CelNumSteps: 3
-    - _CelPrimaryMode: 0
+    - _CelPrimaryMode: 1
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -108,7 +107,7 @@ Material:
     - _QueueOffset: 0
     - _RimEnabled: 0
     - _SelfShadingSize: 0.46
-    - _SelfShadingSizeExtra: 0.5
+    - _SelfShadingSizeExtra: 0.33
     - _ShadowEdgeSize: 0.061
     - _ShadowEdgeSizeExtra: 0.05
     - _SmoothnessTextureChannel: 0
@@ -125,12 +124,12 @@ Material:
     - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.19971518, g: 0.42182747, b: 0.8018868, a: 1}
-    - _ColorDim: {r: 0.055322126, g: 0.11300745, b: 0.6981132, a: 1}
+    - _Color: {r: 0, g: 0.26711065, b: 0.7169812, a: 1}
+    - _ColorDim: {r: 0.2883232, g: 0.49792904, b: 0.8396226, a: 1}
     - _ColorDimCurve: {r: 0.58431375, g: 0.80392164, b: 0.9960785, a: 1}
-    - _ColorDimExtra: {r: 0.4469918, g: 0.5373892, b: 0.8113208, a: 1}
+    - _ColorDimExtra: {r: 0.36931288, g: 0.47396028, b: 0.7924528, a: 1}
     - _ColorDimSteps: {r: 0.12941177, g: 0.42352945, b: 0.92549026, a: 1}
-    - _ColorGradient: {r: 0.06571732, g: 0.31830162, b: 0.6698113, a: 1}
+    - _ColorGradient: {r: 0.06386612, g: 0.24303909, b: 0.6509434, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlatRimColor: {r: 1, g: 1, b: 1, a: 1}
     - _FlatSpecularColor: {r: 0.12941177, g: 0.42352945, b: 0.92549026, a: 1}

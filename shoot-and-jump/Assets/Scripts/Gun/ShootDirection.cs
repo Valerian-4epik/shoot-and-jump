@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootDirection : MonoBehaviour
@@ -28,6 +26,5 @@ public class ShootDirection : MonoBehaviour
             else
                 _canBeSlowed = false;
         }
-        Debug.Log(_canBeSlowed);
     }
 }

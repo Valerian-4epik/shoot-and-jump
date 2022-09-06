@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +26,6 @@ public class RoadGenerator : MonoBehaviour
         {
             if (_road.Count > 0) { position = _road[_road.Count - 1].transform.position + width; }
 
-            //тут магическое число, нужно будет смещать на ширину.(ширина _roadPrefab)
             GameObject road = Instantiate(_roadPrefab, position, Quaternion.identity);
             road.transform.SetParent(transform);
             _road.Add(road);

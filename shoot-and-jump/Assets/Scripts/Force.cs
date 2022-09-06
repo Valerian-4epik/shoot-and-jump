@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -16,7 +14,7 @@ public class Force : MonoBehaviour
     {
       _rigidbody = GetComponent<Rigidbody>();  
     }
-    //rigidbody.addtorque
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))

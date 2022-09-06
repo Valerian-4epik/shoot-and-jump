@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,14 +12,13 @@ public class Gun : MonoBehaviour
     [SerializeField] private ParticleSystem _confitti;
 
     private Explosion _force;
-    private TrailRenderer _trail;
+    private float _slowedTime = 0.4f;
 
     public UnityAction LastBulletShoot;
 
     private void Start()
     {
        _force = gameObject.GetComponent<Explosion>();
-       _trail = gameObject.GetComponentInChildren<TrailRenderer>();
     }
 
     private void Update()
@@ -29,6 +27,25 @@ public class Gun : MonoBehaviour
         {
            Shoot();
         }
+    }
+
+    public void Shoot()
+    {
+        if (_direction.CanBeSlowed)
+            Time.timeScale = _slowedTime;
+        else
+            Time.timeScale = 1.0f;
+
+        PlayOnEffects(_effects);
+        ProjectileBullet bullet = Instantiate(_bullet, _shootPoint.position, Quaternion.LookRotation(_direction.Direction));
+        bullet.Init(this, _direction.Direction);
+        _force.Explode();
+        bullet.Destroy();
+    }
+
+    public void ShootCinfitti()
+    {
+        StartCoroutine(ShootConfitti());
     }
 
     private void PlayOnEffects(GameObject[] effects)
@@ -44,38 +61,5 @@ public class Gun : MonoBehaviour
         yield return new WaitForSeconds(3f);
         _confitti.Play();
     }
-
-    private IEnumerator PlayTrail()
-    {
-        _trail.enabled = true;
-        yield return new WaitForSeconds(1f);
-        _trail.enabled = false;
-    }
-
-    public void Shoot()
-    {
-        if (_direction.CanBeSlowed)
-            Time.timeScale = 0.6f;
-
-        PlayOnEffects(_effects);
-        ProjectileBullet bullet = Instantiate(_bullet, _shootPoint.position, Quaternion.LookRotation(_direction.Direction));
-        bullet.Init(this, _direction.Direction);
-        _force.Explode();
-        bullet.Destroy();
-
-        //if (_trail.enabled)
-        //{
-        //    StopCoroutine(PlayTrail());
-        //    StartCoroutine(PlayTrail());
-        //}
-        //else
-        //    StartCoroutine(PlayTrail());
-    }
-
-    public void ShootCinfitti()
-    {
-        StartCoroutine(ShootConfitti());
-    }
-
 }
  
